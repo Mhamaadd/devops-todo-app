@@ -97,10 +97,11 @@ app.get('/delete-task', function(req,res){
 
 });
 
+app.get('/health', (req, res) => res.send('OK'));
 
 app.listen(port,(err) => {
     if (err) {
         console.log(`Error: ${err}`);
     }
-    console.log(`Yupp! Server is running on port ${port}`);
+    console.log(`Yupp! 🎉 Server is running on port ${port}`);
 })
